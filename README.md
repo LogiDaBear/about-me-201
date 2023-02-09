@@ -2,6 +2,10 @@
 
 ## Lab02
 
+## Lab 04 Partner Pull
+- Driver: Sarah Glass
+- Navigator: Logan Reese
+
 This is a guessing game app that goes directly into my website.
 
 ### Author: Logan Reese
