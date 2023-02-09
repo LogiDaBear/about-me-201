@@ -1,3 +1,17 @@
 h1 {
   font-size: 3vw;
+  background-color: black;
+  color: aquamarine;
+}
+
+h3 {
+  font-size: 2vw;
+  background-color: blue;
+  color: crimson;
+}
+
+ol {
+size-adjust: 2px;
+font-size: 1vw;
+list-style-type: "I";
 }
