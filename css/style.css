@@ -1,17 +1,140 @@
+
+/*Header Styling*/
 h1 {
   font-size: 3vw;
   background-color: black;
   color: aquamarine;
+  text-align: center;
+}
+
+
+section {
+  margin: auto;
+  height: 300px;
+  background: tomato; 
+  transition: 1s all;
+  text-align: center;
+  
+}
+
+h2{
+  margin: auto;
+  font-size: 1.75vw;
+  background-color: red;
+  color:beige;
+}
+
+ul {
+  font-size: 1vw;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+section:hover {
+  background: lightgreen;
+  transform: rotate(360deg);
+  border-radius: 50%;
+  text-align: center;
+}
+
+figure {
+  width: max-content;
+  background-color: rgb(236, 51, 221);
+  padding: 10px;
+  font-size: .5vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+}
+
+img {
+  width: 300px;
+  height: 270px;
+  margin: auto;
+}
+
+ol{
+  color: rgb(43, 1, 43);
+  text-align: center;
+}
+
+li {
+  width: 100%;
+  text-align: center;
+  size-adjust: 2px;
+  font-size: 1vw;
+  list-style-type: "I";
 }
 
 h3 {
+  width: 100%;
+  text-align: center;
   font-size: 2vw;
   background-color: blue;
   color: crimson;
 }
+h4 {
+  text-align: right;
+  font-size: 1vw;
+  color:darkorange;
+  background-color: indigo;
+}
 
-ol {
-size-adjust: 2px;
-font-size: 1vw;
-list-style-type: "I";
+div {
+  width: 100%;
+  height: 320px;
+  background: darkgray;
+  animation: boxchanger 15s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes boxchanger {
+  0% {
+    width: 200px;
+    height: 200px;
+    background: red
+  }
+
+  25% {
+    width: 400px;
+    height: 400px;
+    background: blueviolet;
+  }
+
+  75% {
+    width: 30px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+
+.custom-shape-divider-bottom-1676150449 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676150449 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 146px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1676150449 .shape-fill {
+  fill: #BE1F1F;
+}
+
+.center {
+  margin:auto;
+  width: 50%;
+  border: 3px solid blue;
+  padding: 10px;
 }

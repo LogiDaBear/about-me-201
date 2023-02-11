@@ -13,21 +13,24 @@ function qOne() {
   while (questionOne !== 'yes' || questionOne !== 'y') {
     questionOne = prompt('Nope, guess again').toLowerCase();
     if (questionOne === 'y' || questionOne === 'yes')
+    scoreCount++;
+    alert('Just like the sky and ocean! Seriously look it up!');
       break;
-
+    
   }
-  alert('Yes they are!');
 }
 
 qOne();
 
 function qTwo() {
   let questionTwo = prompt('Do I have kids?').toLowerCase();
-  if (questionTwo === 'yes' || questionTwo === 'y') {
+  while (questionTwo !== 'yes' || questionTwo !== 'y') {
+    questionTwo = prompt('Nope, guess again').toLowerCase;
+    if (questionTwo === 'y' || questionTwo === 'yes')
+    scoreCount++
     alert('Yes 3!');
-    //console.log("yes! 3");
-  } else if (questionTwo === 'no' || questionTwo === 'n') {
-    alert('Nope, guess again');
+   break;
+  
   }
 }
 
@@ -35,23 +38,28 @@ qTwo();
 
 
 function qThree() {
-  let questionThree = prompt('Do I like chocolate?').toLowerCase();
-  if (questionThree === 'yes' || questionThree === 'y') {
-    //console.log("sure does!");
-    alert('Does a religious bear poop in a church in the woods? Yep!');
-  } else if (questionThree === 'no' || questionThree === 'n') {
-    alert('Nope, guess again');
+  let questionThree = prompt('Do I like most music EXCEPT pop country and dubstep?').toLowerCase();
+  while (questionThree !== 'yes' || questionThree !== 'y') {
+    prompt('Nope, guess again').toLowerCase;
+    if (questionThree === 'y' || questionThree === 'yes') 
+     alert('Does a king keep his armies in his sleevies? Yep!');
+     scoreCount++;
+     break;
   }
 }
+
 
 qThree();
 
 function qFour() {
   let questionFour = prompt('Do I have a hairless cat?').toLowerCase();
-  if (questionFour === 'no' || questionFour === 'n') {
-    alert('Sadly, you are correct.');
-  } else if (questionFour === 'yes' || questionFour === 'y') {
-    alert('Nope, guess again');
+  while (questionFour !== 'yes' || questionFour !== 'y') {
+    prompt('Nope, guess again').toLowerCase;
+    if (questionFour === 'yes' || questionFour === 'y') 
+     alert('Sadly, you are correct. Buy me one?');
+     scoreCount++;
+     break;
+  
   }
 }
 
@@ -60,19 +68,17 @@ qFour();
 
 function qFive() {
   let questionFive = prompt('Is my favorite band Gojira?').toLowerCase();
-  if (questionFive === 'yes' || questionFive === 'y') {
+  while (questionFive !== 'yes' || questionFive !== 'y') {
+    prompt('Nope, guess again').toLowerCase;
+   if (questionFive === 'no' || questionFive === 'n') 
     alert('Yes! They are awesome!');
-  } else if (questionFive === 'no' || questionFive === 'n') {
-    alert('Nope, guess again');
+    scoreCount++;
+    break;
+  
   }
 }
 
-qFive;
-
-
-// for(i=0; i<4; i++){
-// }
-
+qFive();
 
 function qSix() {
   let numOfGuess = 4;
@@ -95,15 +101,15 @@ qSix();
 
 
 function qSeven() {
-  let pizza = ['donatos', 'pizza hut', 'papa johns', 'flyers', 'dominos', 'hungry howies'];
+  let pizza = ['donatos', 'papa johns', 'flyers', 'hounddogs', 'hungry howies'];
   let attempts = 6;
   while (attempts) {
-    let pizzaGuess = prompt('Guess my fav pizza place in Ohio').toLowerCase();
+    let pizzaGuess = prompt('Guess my fav pizza place in Ohio, I grant you 6 attempts to get 1 correct').toLowerCase();
     attempts--;
     let guessCorrect = false;
     for (let i = 0; i < pizza.length; i++) {
       if (pizza[i] === pizzaGuess) {
-        alert('Awww yeaaah! You know it! This is correct.');
+        alert('Awww yeaaah! You know it! This is a correct answer out of 5 possible.');
         scoreCount++;
         guessCorrect = true;
         break;
@@ -114,7 +120,5 @@ function qSeven() {
       break;
     }
   }
-  alert(`Thanks for playing my game ${userName} hope you like the site! ${scoreCount}`);
+  alert(`Thanks for playing my game ${userName} hope you like the site! You scored ${scoreCount} on those questions.`);
 }
-
-qSeven();
